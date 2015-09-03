@@ -1,0 +1,98 @@
+
+        <div id="form_personal" class="table-responsive row">
+            <form  class="col-md-6" method="post" action="">
+                <h2>Resgistro de nuevo Personal</h2>
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Cédula:</label><input type="text" autocomplete="off" id="elemento_0" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Nombre:</label><input type="text" autocomplete="off" id="elemento_1" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Cargo:</label> <select class="form-control" id="elemento_2"></select></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Email:</label><input type="text" autocomplete="off" id="elemento_3" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Teléfono:</label><input type="text" autocomplete="off" id="elemento_4" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Dirreción:</label><input type="text" autocomplete="off" id="elemento_5" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><div class="input-group col-md-12 "><label>Usuario:</label><input type="text" autocomplete="off" id="elemento_6" name="filter_policy_no" value="" class="form-control"></div></td>  
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Clave:</label><input type="text" autocomplete="off" id="elemento_7" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group col-md-12"><label>Estado:</label> <select class="form-control" id="elemento_8"></select></div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="btm_guardar" type="button" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Guardar</button>
+                                <button id="btm_cancelar" type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Cancelar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div id="form_filtro2">
+            <form id="form_filtro" method="post" action="">
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                        <tr>
+                            <td><div class="input-group"><label>Nombre:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                            <td><div class="input-group"><label>Cédula:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                            <td><div class="input-group"><label>Email:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                            <td><div class="input-group"><label>Teléfono:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="filter_policy_effectiveproduct">Usuario:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></td>
+                            <td><label for="filter_policy_insurer">Cargo::</label><select id="filter_policy_insurer" name="filter_policy_insurer" class="form-control"><option value="">--- all ---</option></select></td>
+                            <td><label for="filter_policy_insurer">Estado:</label><select id="filter_policy_insurer" name="filter_policy_insurer" class="form-control"><option value="">--- all ---</option></select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="panel-buttons">
+                                <button id="btn_ver_todos" type="button" class="btn btn-default">Cancelar</button>
+                                <button id="btn_limpiar_filtro" type="button" class="btn btn-default">Limpiar Filtro</button>
+                                <button id="btn_aplicar_filtro" type="button" class="btn btn-primary">Aplicar Filtro</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>    
+        </div>
+        <h2>Personal Registrado</h2>
+        <button id="btn_crear" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span> Nuevo Personal</button>
+        <button id="btn_filtro" type="button" class="btn btn-default"><span class="glyphicon glyphicon-filter"></span> Filtrdo</button>
+        <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Nombre:</th>
+                    <th style="text-align: center">Cédula:</th>
+                    <th style="text-align: center">Email:</th>
+                    <th style="text-align: center">Teléfono:</th>
+                    <th style="text-align: center">Dirreción:</th>
+                    <th style="text-align: center">Cargo:</th>
+                    <th style="text-align: center">Usuario:</th>
+                    <th style="text-align: center">Estado:</th>
+                </tr>
+            </thead>
+            <tbody id="datos_personal">
+                <!--Aqui irán las filas de la tabla-->
+                
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        </div>

@@ -1,0 +1,28 @@
+<!--formulario - FILTRO -->
+<div class="table-responsive">
+    <form id="form_filtro" method="post" action="">
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <td><div class="input-group"><label>Nº Reclamo:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                    <td><div class="input-group"><label>Poliza:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                    <td><div class="input-group"><label>Tipo de Poliza:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                    <td><div class="input-group"><label>Titular Asegurado:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></div></td>
+                </tr>
+                <tr>
+                    <td><label for="filter_policy_date_end">Fecha de creación:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></td>
+                    <td><label for="filter_policy_effectiveproduct">Fecha de liquidación:</label><input type="text" autocomplete="off" id="filter_policy_no" name="filter_policy_no" value="" class="form-control"></td>
+                    <td><label for="filter_policy_insurer">Ejecutivo Responsable:</label><select id="filter_policy_insurer" name="filter_policy_insurer" class="form-control"><option value="">--- all ---</option></select></td>
+                    <td><label for="filter_policy_insurer">Estatus:</label><select id="filter_policy_insurer" name="filter_policy_insurer" class="form-control"><option value="">--- all ---</option></select></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="panel-buttons">
+                        <button id="btn_cancelar_filtro" type="submit" class="btn btn-default">Cancelar</button>
+                        <button type="submit" class="btn btn btn-default">Limpiar Filtro</button>
+                        <button type="submit" class="btn btn-primary">Aplicar Filtro</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div> <!-- FIN formulario - FILTRO -->

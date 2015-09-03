@@ -1,0 +1,46 @@
+              
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header" id='cabecera_formulario'>
+            <h3>Registre las Operaciones</h3>
+        </div>
+        <div class="modal-body">
+            <!-- The form is placed inside the body of modal -->
+            <form class="form-group-sm" id="operaciones" name="operaciones">
+                <div class='form-group' >
+                    <label>Operación:</label>
+                    </br>
+                    <input  type="text" name="operaciones_0"  id="operaciones_0" onblur="autoCompletado(this, 'operaciones', 'operacion')"   value="" required="" />
+                    <div id='operacion_spam'></div>
+                </div>
+                <div class='form-group' >
+                    <label>Dirreción:</label>
+                    </br>
+                    <input type="text" name="operaciones_1" id="operaciones_1" value="" required="" />
+                    <div id='direccion_spam'></div>
+                </div>
+                <div class='form-group' >
+                    <label>Latitud:</label>
+                    </br>
+                    <input type="text" name="operaciones_2"  id="operaciones_2" value="" required="" />
+                    <div id='latitud_spam'></div>
+                </div>
+                <div class='form-group' >
+                    <label>Longitud:</label>
+                    </br>
+                    <input type="text" name="operaciones_3" id="operaciones_3" value="" required="" />
+                    <div id='longitud_spam'></div>
+                </div>
+                <div class='form-group' >
+                    <label>Teléfono:</label>
+                    </br>
+                    <input type="text" name="operaciones_4" maxlength="9" onblur="validarEnteros(this, 'telefono_spam')" id="operaciones_4" value="" required="" />
+                    <div id='telefono_spam'></div>
+                </div>
+                <input id="btsubmit" class="btn btn-primary" style=" width:310px;" name="btsubmit" type="button" onclick="submitData('../aplicacion/operacion/operacioncontrolador.php?seccion=datos', 'pm-centro', '5', 'operaciones')" value="Registrar">
+            </form>
+        </div>
+    </div>
+    <div class='alert-success'  id='pm-centro'></div>
+    
+</div>

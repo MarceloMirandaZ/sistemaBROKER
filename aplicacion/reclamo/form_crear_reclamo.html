@@ -1,0 +1,221 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Información General</a></li>
+            <li><a href="#">Diagnostico</a></li>
+            <li><a href="#">Liquidación</a></li>
+            <li><a href="#">Pago</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="progress progress-striped active">
+                    <div class="progress-bar" role="progressbar"
+                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 25%">
+                    <span class="sr-only">45% completado</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h2> Nuevo Reclamo</h2>
+                    <div class="btn-group" style="float:right">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <button type="button" class="btn btn-default" onClick="window.open('cum_obli1.pdf', '_blank', 'fullscreen=yes'); return false;"><span class="glyphicon glyphicon-open-file"></span></button>
+                    </div>
+                </div>
+                   
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Información Titular</h4>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xs-3 col-md-2" ><label class="col-sm-2 control-label">C.I./Pasaporte</label></div>
+                                                    <div class="col-xs-3 col-md-4">
+                                                        <input id="input_cedula" class="form-control" placeholder="Enter number">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-3 col-md-2"><label class="col-sm-2 control-label">Apellidos</label></div>
+                                                    <div class="col-xs-3 col-md-4">
+                                                        <input id="input_apellido" class="form-control" placeholder="Enter text">
+                                                    </div>
+                                                    <div  class="col-xs-3 col-md-1"><label class="col-sm-2 control-label">Nombres</label></div>
+                                                    <div class="col-xs-3 col-md-5">
+                                                        <input  id="input_nombre" class="form-control" placeholder="Enter text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- /.col-lg-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                        </div>
+                        <!-- /.panel/body -->
+                    </div>
+                    <!-- /.panel/defautl -->
+                </div>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Información Reclamo</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-4"><label class="col-sm-12">ID Reclamo</label></div>
+                                                <div class="col-xs-3 col-md-8"><input class="form-control" placeholder="Enter number" required></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-4"><label class="col-sm-12">Cliente</label></div>
+                                                <div class="col-xs-3 col-md-8">
+                                                    <input class="form-control" placeholder="Enter text" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-4"><label class="col-sm-12">Estatus</label></div>
+                                                <div class="col-xs-3 col-md-8">
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-5 col-md-5"><label class="col-sm-5">Fecha Incidente/Perdida</label></div>
+                                                <div class="col-md-7">
+                                                    <div class="well">
+                                                        <div id="datetimepicker4" class="input-append">
+                                                            <input size="10" data-format="dd-MM-yyyy" type="text">
+                                                                <span class="add-on">
+                                                                <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                                                                </i>
+                                                                </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-4"><label class="col-sm-12">Adjuntar archivo</label></div>
+                                                <div class="col-xs-3 col-md-8">
+                                                    <input type="file" id="ejemplo_archivo_1" required></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel-defautl -->
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Póliza</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="col-lg-12">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-3 col-md-5"><label class="col-sm-12">Nº Póliza</label></div>
+                                            <div class="col-xs-3 col-md-7">
+                                                <input id="input_num_poliza" class="form-control" placeholder="Enter text" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 col-md-5"><label class="col-sm-12">Aseguradora</label></div>
+                                            <div class="col-xs-3 col-md-7">
+                                                <input id="input_nom_aseguradora" class="form-control" placeholder="Enter text" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 col-md-5"><label class="col-sm-12">Producto</label></div>
+                                            <div class="col-xs-3 col-md-7">
+                                                <input id="input_tipo_poliza" class="form-control" placeholder="Enter text" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 col-md-5"><label class="col-sm-12">Fecha Inicio</label></div>
+                                            <div class="col-xs-3 col-md-7">
+                                                <input id="input_fecha_creacion" class="form-control" placeholder="Enter text" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3 col-md-5"><label class="col-sm-12">Fecha Termino</label></div>
+                                            <div class="col-xs-3 col-md-7">
+                                                <input id="input_fecha_vigencia" class="form-control" placeholder="Enter text" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="btn-group" style="float:right; padding-bottom: 10px">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+                </div>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+</div>

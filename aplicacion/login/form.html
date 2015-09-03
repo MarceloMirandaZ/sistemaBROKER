@@ -1,0 +1,29 @@
+<form class="form-signin col-md-4 col-md-offset-4 modal-content">
+        <div class="modal-header">
+            <img src="../vista/images/logo_empresa.png" alt=""/>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Usuario" id="login_0">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" placeholder="Clave" id="login_1">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Empresa" id="login_2">
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="col-md-12">
+            <button type="button" class="btn btn-primary" onclick="submitData('../login/logincontrolador.php?seccion=datos', 'mensaje', '3', 'login')">Entrar</button>
+          </div>	
+        </div>
+        <div class="modal-footer">
+            <div class="col-md-12" id="mensaje"></div>
+        </div>
+    
+</form>
+    
+
+

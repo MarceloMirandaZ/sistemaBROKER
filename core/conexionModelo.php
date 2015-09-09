@@ -58,7 +58,7 @@ public function config_local()
 
 	 function query($sql,$cn,$sms)
 	{
-		$query = @mysql_query($sql,$cn)or die('Error:'.$sms);
+		$query = @mysql_query($sql,$cn)or die('<span class="glyphicon glyphicon-search"></span> No encomtramos información en la Empresa '.$sms.'');
 		if($query){return $query;
                 $this->terminar();
                 }
@@ -77,9 +77,9 @@ public function config_local()
 	*/
 	 function sql($sql, $que_base)
 	{
-            // echo 'cx-que base:'.$que_base;
+            //echo 'cx-que base:'.$que_base;
 		$cn = $this->conectar($que_base);
-		$sms = $sql;
+		$sms = $que_base;
 
 		return   $this->query($sql,$cn,$sms);
 	}

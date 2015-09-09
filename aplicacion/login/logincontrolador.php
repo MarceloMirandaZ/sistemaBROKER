@@ -24,7 +24,8 @@ class logincontrolador extends formularios
             require_once '../../core/enrutamiento.php';
             $nave = new enrutamiento();
             $nave->set('id', ''.utf8_encode($procesar->getdataSource()->idpersonal));
-            $nave->set('nombre', ''.utf8_encode($procesar->getdataSource()->nom_personal));
+            $nave->set('nombre', ''.utf8_encode($procesar->getdataSource()->nombre));
+            $nave->set('apellido', ''.utf8_encode($procesar->getdataSource()->apellido));
             $nave->set('cargo', ''.utf8_encode($procesar->getdataSource()->cargo));
             //$nave->set('usuario', ''.utf8_encode($procesar->getdataSource()->usuario));
             $nave->set('estado', ''.utf8_encode($procesar->getdataSource()->estado));

@@ -37,15 +37,15 @@ class listaModelo extends crudDatos
                 
                 echo json_encode(@$data);
     }
-    function getAllDatos($sql,$que_bd)
+    function getAllDatos($sql,$que_base)
     {
-        //require_once 'conexionModelo.php';
+        require_once 'conexionModelo.php';
         //echo '$que_base:';
              $jsonData = array();         
              $data = array();
              $nombre_columna="";
             // echo 'el SQL:'.$sql;
-        $query=$this->constructorBD()->sql($sql,$que_bd); 
+        $query=$this->constructorBD()->sql($sql,$que_base); 
         //echo 'el QUERY--------------------------------------:'.sql($sql,$que_base); 
         //quiero saber cuantas columnas tiene la tabla
         $numero_total_columnas= mysql_num_fields($query);

@@ -12,20 +12,18 @@ var bd_estado;
 var lista_estado= new Array;
 
 var dato_insert= new Array();
-function cargar_personal(){
-    //alert("funcion cargar personal");
-    //--***GRID PERSONAL***--
-    $("#btn_permiso_personal").removeClass('active');
-    $("#btn_cliente").removeClass('active');
-    //al hacer click en el boton "btn_personal" borramos el nodo "contenedor_formularios" y su nodos hijos 
+function cargar_compania_seguros(){
+
+    //al hacer click en el boton "btn_permiso_personal" borramos el nodo "contenedor_formularios" y su nodos hijos 
     $("#contenedor_formularios").empty();
     $("#contenedor_formularios").remove();
-    $("#grid_personal").remove();
     $("#grid_permiso_personal").remove();
+     $("#grid_personal").remove();
     //creamos en el DOM id ="contenedor_formularios" que almacenará a todos los formularios (modulos)
-    $("#contenido").append('<div class="panel panel-default" id ="contenedor_formularios"><div id ="grid_personal" class="panel-body"></div></div>');
-    $("#grid_personal").load('../configuraciones/personal/grid_personal.html',function(){ 
-           //obtengo el nombre de la bd
+
+    $("#contenido").append('<div class="panel panel-default" id ="contenedor_formularios"><div id ="grid_compania_seguros" class="panel-body"></div></div>');
+    $("#grid_compania_seguros").load('../configuraciones/cliente/grid_grid_compania_seguros.html',function(){ 
+        //obtengo el nombre de la bd
         bd_sesion=restJson("../../core/json.php?funcion=informacion");
         que_bd=bd_sesion.alias;
 
@@ -139,7 +137,7 @@ function cargar_personal(){
                  });
             });
         });
-    });//--/FIN load grid personal                 
+    });               
 }//FIN funcion personal
 //variable tipo obejeto global para almacenar los datos de los input 
 var datos_obtenidos= new Object();

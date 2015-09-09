@@ -26,7 +26,7 @@ class loginmodelo extends crudDatos
       if($bandera)
       {
           //$this->mensajesUi()->mensaje('esto es parametro'.$param[2]);    
-          $this->preparar('select * from vista_permiso_personal where usuario=? and clave=? and alias_empresa=?');
+          $this->preparar('select * from vista_personal where usuario=? and clave=? and alias_empresa=?');
           $this->autoSetParametros($param);
           $this->ejecutarSql($param[2]);
           $this->GetdatosSql();

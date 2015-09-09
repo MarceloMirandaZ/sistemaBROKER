@@ -8,12 +8,12 @@ class json
 
     function leerJson() 
     {
-    $data = file_get_contents("../parametros/personalizacion.json");
+        $data = file_get_contents("../parametros/personalizacion.json");
         $products = json_decode($data, true);
 
-foreach ($products as $product) {
-    print_r($product);
-}    
+        foreach ($products as $product) {
+            print_r($product);
+        }    
     }
     
     function informacion() 
@@ -23,14 +23,14 @@ foreach ($products as $product) {
         header('Content-type: application/json');//esta cabecera  nos permite obtener el dato en json
         $data['id']=''.$nave->get('id');//id del sistema
         $data['nombre']=''.$nave->get('nombre');//usuario del sistema
-        //$data['usuario']=''.$nave->get('usuario');//usuario del sistema
+        $data['apellido']=''.$nave->get('apellido');//usuario del sistema
         $data['cargo']=''.$nave->get('cargo');//cargo
         $data['alias']=''.$nave->get('alias');//cargo
         //$data['permisos']=''.$nave->get('permisos');//cargo
         $data['estado']=''.$nave->get('estado');//cargo
-        $data['permiso']=''.$nave->get('permiso');
+       // $data['permiso']=''.$nave->get('permiso');
         //$data['permiso2']=''.$nave->get('permiso2');
-        $data['pagina']=''.$nave->get('pagina');
+        //$data['pagina']=''.$nave->get('pagina');
 
         
        echo json_encode($data);
@@ -110,6 +110,7 @@ foreach ($products as $product) {
         $lista->getAllDatos(utf8_decode($sql),$que_base);//funcion me devuelve los datos en json 
         
     }
+
          
 
     

@@ -125,9 +125,10 @@ ul.alert-dropdown {
        /* border: none;*/
         border-radius: 1px;
         overflow-y: auto;
-        /*background-color: #222;*/
-        background-color:#F2F1DF;
-        border: 2px solid #D9D6CF;
+        /*background-color: #222;
+        background-color:#D9D9D9;*/
+        border: 1px solid #73737B;
+        border-top-width: 0;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;

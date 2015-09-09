@@ -267,7 +267,6 @@ function getHtml(url, div, ms)
 
 
 }
-
 function restJson(fuenteData)
 {
     //json captura
@@ -278,7 +277,7 @@ function restJson(fuenteData)
         'global': false,
         'url': fuenteData,
         'dataType': "json",
-        'error':function(){alert("error:"+url);},
+        'error':function(){json = "error";},
         'success': function (data) {
             json = data;
         }
